@@ -66,3 +66,8 @@ button {
     transform: rotate(8deg);
   }
 }
+
+#total {
+  color: rgb(24, 68, 24);
+  font-size: x-large;
+}
