@@ -14,6 +14,9 @@ function roll() {
     die.classList.add("shake");
   });
 
+  const snd = new Audio("assets/sound.wav");
+  snd.play()
+
   setTimeout(() => {
     dice.forEach((die) => {
       die.classList.remove("shake");
