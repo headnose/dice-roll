@@ -15,7 +15,7 @@ function roll() {
   });
 
   const snd = new Audio("assets/sound.wav");
-  snd.play()
+  snd.play();
 
   setTimeout(() => {
     dice.forEach((die) => {
@@ -26,4 +26,8 @@ function roll() {
     document.querySelector("#die-1").setAttribute("src", images[dieOneVal]);
     document.querySelector("#die-2").setAttribute("src", images[dieTwoVal]);
   }, 1000);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    roll();
+  });
 }
